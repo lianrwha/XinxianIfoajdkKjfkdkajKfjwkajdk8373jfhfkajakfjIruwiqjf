@@ -1,0 +1,38 @@
+var objc = JSON.parse($response.body);
+
+objc = {
+    "result": {
+        "result": "success",
+        "msTime": 9999999999999,
+        "accountCreatedMillis":1,
+        "licenses": [
+            {
+                "productId": "alightcreative.motion",
+                "label": null,
+                "benefits": [
+                    "RemoveWatermark",
+                    "MemberEffects",
+                    "ProjectPackageSharing",
+                    "FutureMemberFeatures",
+                    "AdvancedEasing",
+                    "CameraObjects",
+                    "LayerParenting",
+                    "CloudStorageLowTier",
+                    "PremiumFeatures"
+                ],
+                "period": "100000000y",
+                "valid": true,
+                "expires": 27988447799999000,
+                "details": null,
+                "type": "subscription",
+                "autoRenewing": true,
+                "orderNumber": "m.tb.cn/h.6PE7QRU\n",
+                "linkStatus": "linked-current",
+                "store": "apple_app_store"
+            }
+        ],
+        "warnings": []
+    }
+};
+
+$done({ body: JSON.stringify(objc) });
